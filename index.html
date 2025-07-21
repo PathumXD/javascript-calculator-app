@@ -1,0 +1,52 @@
+<!--
+  Project: javascript-calculator-app
+  Author: PathumXD
+  GitHub: https://github.com/PathumXD/javascript-calculator-app
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Calculator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="calc-container">
+        <div class="output-display" id="resultDisplay">0</div>
+        <div class="keypad-buttons">
+            <button class="calc-button func-btn" onclick="clearAll()">C</button>
+            <button class="calc-button func-btn" onclick="deleteLastChar()">DEL</button>
+            <button class="calc-button op-symbol" onclick="appendOperation('**')">^</button>
+            <button class="calc-button op-symbol" onclick="appendOperation('/')">/</button>
+
+            <button class="calc-button" onclick="addNumber('7')">7</button>
+            <button class="calc-button" onclick="addNumber('8')">8</button>
+            <button class="calc-button" onclick="addNumber('9')">9</button>
+            <button class="calc-button op-symbol" onclick="appendOperation('*')">x</button>
+
+            <button class="calc-button" onclick="addNumber('4')">4</button>
+            <button class="calc-button" onclick="addNumber('5')">5</button>
+            <button class="calc-button" onclick="addNumber('6')">6</button>
+            <button class="calc-button op-symbol" onclick="appendOperation('-')">-</button>
+
+            <button class="calc-button" onclick="addNumber('1')">1</button>
+            <button class="calc-button" onclick="addNumber('2')">2</button>
+            <button class="calc-button" onclick="addNumber('3')">3</button>
+            <button class="calc-button op-symbol" onclick="appendOperation('+')">+</button>
+
+            <button class="calc-button" onclick="addNumber('0')">0</button>
+            <button class="calc-button" onclick="addNumber('.')">.</button>
+            <button class="calc-button func-btn" onclick="calculateSquareRoot()">√</button>
+            <button class="calc-button equal-btn" onclick="performCalculation()">=</button>
+        </div>
+    </div>
+    <div class="copyright-section">
+        &copy; 2025 Pathum Bandara. <br> GitHub Profile <a href="https://github.com/PathumXD" target="_blank">PathumXD</a> <br>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
